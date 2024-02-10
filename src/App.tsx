@@ -10,14 +10,15 @@ const App = () => {
     <Grid
       templateAreas={{
         base: `"nav" "main"`,
-        sm: `"nav nav" "aside main`,
+        md: `"nav nav" "aside main"`,
+        lg: `"nav nav" "aside main"`,
       }}
     >
-      <GridItem area="nav" bg="red">
-        Nav1
+      <GridItem area="nav" bg="coral">
+        <NavBar />
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside" bg="blue">
+        <GridItem area="aside" bg="gold">
           Aside
         </GridItem>
       </Show>
