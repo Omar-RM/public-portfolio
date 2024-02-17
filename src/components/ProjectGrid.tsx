@@ -7,11 +7,12 @@ const ProjectGrid = () => {
   return (
     <>
       <SimpleGrid
-        columns={{ sm: 1, md: 2, lg: 3, xl: 3 }}
+        columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
         padding={2}
         spacing={5}
       >
         <ProjectContainer>
+          <ProjectCard />
           <ProjectCard />
         </ProjectContainer>
       </SimpleGrid>
