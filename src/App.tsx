@@ -8,6 +8,8 @@ import MBody from "./components/MBody";
 const App = () => {
   return (
     <Grid
+      margin={"auto"}
+      width={"1040px"}
       templateAreas={{
         base: `"nav" "main"`,
         md: `"nav nav" "aside main"`,
@@ -18,12 +20,12 @@ const App = () => {
         <NavBar />
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside" bg="gold">
-          Aside
+        <GridItem area="aside" maxWidth={"140px"} border={"1px solid grey"}>
+          <Aside></Aside>
         </GridItem>
       </Show>
-      <GridItem area="main" bg="green">
-        Main1
+      <GridItem area="main" width={"900px"} border={"1px solid green"}>
+        <MBody />
       </GridItem>
     </Grid>
   );
