@@ -17,11 +17,10 @@ import Introduction from "./Introduction";
 const MBody = () => {
   return (
     <>
-      <Box w={"100%"} margin={"3px"} padding={"20px"}>
+      <Box w={"100%"} margin={"3px"} padding={"90px"}>
         <Introduction />
+        <ProjectGrid />
       </Box>
-
-      <ProjectGrid />
     </>
   );
 };

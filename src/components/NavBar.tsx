@@ -20,8 +20,8 @@ import { MdOutlinePersonPin } from "react-icons/md";
 const NavBar = () => {
   return (
     <Flex
-      position="static"
       bg="gray.800"
+      margin={"auto"}
       width="100%"
       justify={"space-between"}
       wrap={"wrap"}

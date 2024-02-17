@@ -1,12 +1,12 @@
-import { Box, Button, Center, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, Button, Flex, Highlight, Text } from "@chakra-ui/react";
 
 const Introduction = () => {
   return (
     <>
-      <Text>
-        <h2>Hello there, I am Omar Rico</h2>
-        <h1>Software Developer &#8226; Web Designer?</h1>
+      <Text fontFamily={"Proxima"} fontSize={40} textAlign={"center"}>
+        <Highlight query={"Omar Rico"}>
+          Hello there, I am Omar Rico Software DeveloperWeb Designer?
+        </Highlight>
       </Text>
       <Box width={"100%"}>
         <Flex margin="auto" width="35%" justify={"space-between"}>
@@ -22,11 +22,9 @@ const Introduction = () => {
         </Flex>
       </Box>
 
-      <Text>
-        <h2>
-          Hi, I am Omar, experienced web developer with 2 yeard of experience in
-          JavaScript, React. Ready to create innovatice web solutions.
-        </h2>
+      <Text fontSize={30} width={"90%"} alignSelf={"center"} mt={6}>
+        Hi, I am Omar, experienced web developer with 2 yeard of experience in
+        JavaScript, React. Ready to create innovatice web solutions.
       </Text>
     </>
   );

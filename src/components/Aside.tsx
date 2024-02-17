@@ -3,8 +3,7 @@ import React from "react";
 
 const Aside = () => {
   return (
-    <Flex width={"30px"}>
-      {" "}
+    <Flex width={"100%"} bg={"red"}>
       <h1>Aside</h1>
     </Flex>
   );

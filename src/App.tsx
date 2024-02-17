@@ -9,22 +9,26 @@ const App = () => {
   return (
     <Grid
       margin={"auto"}
-      width={"1040px"}
       templateAreas={{
         base: `"nav" "main"`,
         md: `"nav nav" "aside main"`,
         lg: `"nav nav" "aside main"`,
       }}
     >
-      <GridItem area="nav" bg="coral">
+      <GridItem area="nav" bg={"red"} w={"80%"} margin={"auto"}>
         <NavBar />
       </GridItem>
-      <Show above="lg">
-        <GridItem area="aside" maxWidth={"140px"} border={"1px solid grey"}>
+      <Show above="xlg">
+        <GridItem area="aside" w={"100px"} border={"1px solid grey"}>
           <Aside></Aside>
         </GridItem>
       </Show>
-      <GridItem area="main" width={"900px"} border={"1px solid green"}>
+      <GridItem
+        area="main"
+        w={"90%"}
+        margin={"auto"}
+        border={"1px solid green"}
+      >
         <MBody />
       </GridItem>
     </Grid>
